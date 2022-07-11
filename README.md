@@ -4,8 +4,8 @@
 - This program was created by Jacky He on 01/08/2022.
 
 ## Description 
-- This project is a reflection of my profile currently.
-- I plan to use **Three.js** for a two objects that I will add. 
+- This project is a reflection of my current profile.
+- I plan to use **Three.js** for two objects that I plan to add in the future. 
 
 ## Tools Used
 - ViteJS
