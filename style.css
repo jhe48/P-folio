@@ -2,12 +2,13 @@
   background-color: #000000;
 }
 
-@font-face {
-  font-family: "neon-tubes-2-regular";
-  src: url("./NeonTubes2.otf") format("woff"),
-    url("./NeonTubes2.otf") format("opentype"),
-    url("./NeonTubes2.otf") format("truetype");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
+
 
 body {
   margin: 0;
@@ -17,6 +18,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+
+
+/* The Box surrounding the text  */
 
 .board {
   min-width: 500px;
@@ -99,6 +104,18 @@ body {
 
   /* Animation */
   animation: blink 0.15s infinite alternate;
+}
+
+
+/* About Me Content */
+.abtInfo {
+  width: 950px;
+  position: absolute;
+  color: #FFFFFF;
+  top: 500px;
+  left: 450px;
+  text-align: right;
+  font-family: 'Press Start 2P', cursive;
 }
 
 
