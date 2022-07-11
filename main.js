@@ -1,3 +1,0 @@
-import './style.css'
-
-// Make JS for monument and so on...  
