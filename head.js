@@ -11,7 +11,7 @@ const scene1 = new THREE.Scene();
 
 // Camera Object (FOV, Aspect Ratio, Far)
 // 40-45 or less FOV will cause less distortion when objects are moved.
-const camera1 = new THREE.PerspectiveCamera( 40, window.innerWidth/window.innerHeight, 1, 1000 );
+const camera1 = new THREE.PerspectiveCamera( 43, window.innerWidth/window.innerHeight, 1, 1000 );
 
 
 // Renderer Object
@@ -27,15 +27,16 @@ camera1.position.setZ(30);
 
 
 // Lights & Light-helpers
-const flashlight = new THREE.PointLight(0xffffff);
+const flashlight = new THREE.PointLight(0x005BBB);
 flashlight.position.set(1, 1, 1);
 
-const spotlight = new THREE.AmbientLight(0xffffff);
+const spotlight = new THREE.AmbientLight(0xFFFFFF);
 
 
 
 
 
+// scene1.background = new THREE.Color(0xFFFFE4);
 
 // Create scene w/ all objects.
 scene1.add(
@@ -46,23 +47,25 @@ scene1.add(
 
 
 
+// Robot Model (Conflicting name with the gltf file)
+let android;
 // Taken from https://threejs.org/docs/#manual/en/introduction/Loading-3D-models
 // And slightly modified.
-function loadBlenderHead() {
+function loadBlenderRobot() {
     const loader = new GLTFLoader();
 
-loader.load( 'model/headShape.gltf', function ( gltf ) {
+loader.load( 'model/robot.gltf', function ( gltf ) {
 
-    let face = gltf.scene;
+  android = gltf.scene;
 
-	scene1.add( face );
+	scene1.add( android );
 
-    face.scale.set(2, 2, 2);
-    face.position.x = 4;
-    face.position.y = 2;
-    face.position.z = 15;
-    face.rotation.x = 0.15;
-    face.rotation.y = 0.15;
+  android.scale.set(5, 5, 5);
+  android.position.x = 10;
+  android.position.y = -18;
+  // android.position.z = 15;
+  android.rotation.x = 0.3;
+  // android.rotation.y = -0.1;
 
 }, undefined, function ( error ) {
 
@@ -70,6 +73,20 @@ loader.load( 'model/headShape.gltf', function ( gltf ) {
 
 } );
 }
+
+
+
+
+// function scrollEvent() {
+//   const currentScreen = document.body.getBoundingClientRect().top;
+
+//   android.position.z = 1;
+
+//   camera1.position.x = currentScreen * -0.002;
+//   camera1.rotation.y = currentScreen * -0.002;
+//   camera1.position.z = currentScreen * -0.01;
+// }
+// document.body.onscroll = scrollEvent
 
 
 // Function to continually render scenes. 
@@ -80,9 +97,10 @@ function animate() {
  
   // For more detailed view of the scene.
   // controls.update();
+  //android.rotation.y += 0.007;
 
   render1.render( scene1, camera1 );
 
 }
-loadBlenderHead();
+loadBlenderRobot();
 animate();
