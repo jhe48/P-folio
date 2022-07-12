@@ -28,5 +28,6 @@ npm run dev
 ```
 # Snapshots of Current Version
 
-![Screenshot 2022-07-10 at 9 28 35 PM](https://user-images.githubusercontent.com/78707612/178183483-1a3312c4-a192-439b-9e19-38e17f7c69cf.png)
+![Screenshot 2022-07-11 at 8 48 11 PM](https://user-images.githubusercontent.com/78707612/178398176-0d6e4f6c-328f-4f3d-9d61-89f2254378f1.png)
+![Screenshot 2022-07-11 at 8 48 31 PM](https://user-images.githubusercontent.com/78707612/178398183-c74b9654-dbeb-4ca6-b6a5-1c8cf8bdd0bd.png)
 
