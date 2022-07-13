@@ -1,5 +1,5 @@
 * {
-  background-color: #000000;
+  background-color: #222121;
 }
 
 
@@ -106,9 +106,67 @@ body {
   animation: blink 0.15s infinite alternate;
 }
 
+main {
+  top: 557px;
+  width: 100vw;
+  color: #00BFFF;
+  z-index: 99;
+  position: absolute;
+  width: 80%;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h3, .intro {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 6 / span 6;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+section {
+  grid-column: 2 / 13;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 2;
+  margin-bottom: var(--spacing);
+}
+
+.socialme {
+  text-align: right;
+}
+
+a {
+  color: #87CEEB;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a:hover {
+  color: chartreuse;
+}
+
 
 /* About Me Content */
-.abtInfo {
+/* .abtInfo {
   width: 600px;
   position: absolute;
   color: #FFFFFF;
@@ -116,7 +174,7 @@ body {
   left: 160px;
   text-align: left;
   font-family: 'Press Start 2P', cursive;
-}
+} */
 
 
 
