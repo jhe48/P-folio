@@ -29,6 +29,9 @@ npm run dev
 ```
 # Snapshots
 ## Current Version
+![Screenshot 2022-07-13 at 4 55 17 PM](https://user-images.githubusercontent.com/78707612/178899733-a6fc1eef-11ad-4515-aa86-8e652bf72925.png)
+![Screenshot 2022-07-13 at 4 55 58 PM](https://user-images.githubusercontent.com/78707612/178899738-6b434b17-0697-43f7-96a4-3b889e8e967f.png)
+![Screenshot 2022-07-13 at 4 58 12 PM](https://user-images.githubusercontent.com/78707612/178899739-72ab2015-9b8a-45c9-8767-47be1704313c.png)
 
 ## Previous Versions
 ![Screenshot 2022-07-11 at 8 48 11 PM](https://user-images.githubusercontent.com/78707612/178398176-0d6e4f6c-328f-4f3d-9d61-89f2254378f1.png)
