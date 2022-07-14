@@ -1,5 +1,5 @@
 * {
-  background-color: #222121;
+  background-color: #E27676;
 }
 
 
@@ -9,22 +9,19 @@ canvas {
   left: 0;
 }
 
-
 body {
   margin: 0;
-  width: 160vh;
-  height: 75vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100vh;
+  display: grid;
 }
-
 
 
 /* The Box surrounding the text  */
 
 .board {
-  min-width: 700px;
+  top: 50px;
+  left: 130px;
+  min-width: 0px;
   margin: 0 auto;
   border: 6px solid #FFFFFF;
   border-radius: 8px;
@@ -37,8 +34,8 @@ body {
   justify-content: center;
 
   /* Border Lights */
-  box-shadow: inset 0 0 22px 3px #005BBB,
-                    0 0 28px 5px #005BBB;
+  box-shadow: inset 0 0 22px 3px #F5AC27,
+                    0 0 28px 5px #F5AC27;
                     
   /* Animation */
   animation: blink 0.15s infinite alternate;
@@ -56,11 +53,11 @@ body {
   text-shadow: 0 0 0 transparent,
               0 0 10px #005BBB, 
               0 0 20px rgba(255, 0, 60, 0.5),
-              0 0 40px #005BBB,
-              0 0 300px #005BBB,
-              0 0 200px #005BBB,
-              0 0 300px #005BBB,
-              0 0 500px #005BBB;
+              0 0 40px #F5AC27,
+              0 0 300px #F5AC27,
+              0 0 200px #F5AC27,
+              0 0 300px #F5AC27,
+              0 0 500px #F5AC27;
 
   /* Animation */
   animation: flicker 5s infinite alternate;
@@ -74,7 +71,7 @@ body {
   top: -20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 80%;
   background-color: #FFFCD7;
   border-radius: 8px;
 
@@ -94,7 +91,7 @@ body {
   Bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 80%;
   background-color: #FFFCD7;
   border-radius: 8px;
 
@@ -107,9 +104,9 @@ body {
 }
 
 main {
-  top: 557px;
-  width: 100vw;
-  color: #00BFFF;
+  top: 492px;
+  width: 100vh;
+  color: #AA381E;
   z-index: 99;
   position: absolute;
   width: 80%;
@@ -120,6 +117,10 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
+h1, .intro{
+ color: #F5AC27; 
+}
+
 h1, h3, .intro {
   font-family: 'Press Start 2P', cursive;
   font-weight: 700;
@@ -127,9 +128,10 @@ h1, h3, .intro {
 }
 
 p {
-  font-family: elevon, sans-serif;
+  font-family: 'Press Start 2P', cursive;
   font-weight: 700;
-  font-style: italic;
+  font-style: normal;
+  line-height: 1.5;
 }
 
 header {
@@ -137,6 +139,7 @@ header {
   grid-column: 6 / span 6;
   font-size: 2.5rem;
   padding: 2rem;
+  line-height: 2;
   margin-bottom: var(--spacing);
 }
 
@@ -154,14 +157,14 @@ section {
 }
 
 a {
-  color: #87CEEB;
+  color: #AA381E;
   font-family: 'Press Start 2P', cursive;
   font-weight: 700;
   font-style: normal;
 }
 
 a:hover {
-  color: chartreuse;
+  color: #F5AC27;
 }
 
 

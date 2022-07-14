@@ -16,22 +16,23 @@ const camera1 = new THREE.PerspectiveCamera( 43, window.innerWidth/window.innerH
 
 // Renderer Object
 const render1 = new THREE.WebGL1Renderer({
-  canvas: document.querySelector('#mon1')
+  canvas: document.querySelector('#model-1'),
+  alpha: true
 });
 
 render1.setPixelRatio( window.devicePixelRatio );
 render1.setSize( window.innerWidth, window.innerHeight );
 
-camera1.position.setZ(30);
+camera1.position.setZ(26);
 
 
 
-// Lights & Light-helpers
-const flashlight = new THREE.PointLight(0x005BBB);
-flashlight.position.set(1, 1, 1);
-
+// Lights & Light-helpers (Temporarily Blue because of the sign)
+//const flashlight = new THREE.PointLight(0x005BBB, 18);
+const flashlight = new THREE.PointLight(0xF5AC27, 18);
+flashlight.position.set(-1, 4, 15);
+//const notInvis = new THREE.PointLightHelper(flashlight);
 const spotlight = new THREE.AmbientLight(0xFFFFFF);
-
 
 
 
@@ -42,30 +43,31 @@ const spotlight = new THREE.AmbientLight(0xFFFFFF);
 scene1.add(
     flashlight,
     spotlight
+    //,notInvisModifier
 );
 
 
 
 
-// Robot Model (Conflicting name with the gltf file)
-let android;
+// Model #1
+let horseMan;
 // Taken from https://threejs.org/docs/#manual/en/introduction/Loading-3D-models
 // And slightly modified.
 function loadBlenderRobot() {
     const loader = new GLTFLoader();
 
-loader.load( 'model/robot.gltf', function ( gltf ) {
+loader.load( 'model/HorseMan.gltf', function ( gltf ) {
 
-  android = gltf.scene;
+    horseMan = gltf.scene;
 
-	scene1.add( android );
+	scene1.add( horseMan );
 
-  android.scale.set(5, 5, 5);
-  android.position.x = 10;
-  android.position.y = -18;
-  // android.position.z = 15;
-  android.rotation.x = 0.3;
-  // android.rotation.y = -0.1;
+    horseMan.scale.set(10, 10, 10);
+    horseMan.position.x = 5;
+    horseMan.position.y = -2;
+  // horseMan.position.z = 15;
+    horseMan.rotation.x = 0.3;
+  // horseMan.rotation.y = -0.1;
 
 }, undefined, function ( error ) {
 
@@ -80,7 +82,7 @@ loader.load( 'model/robot.gltf', function ( gltf ) {
 // function scrollEvent() {
 //   const currentScreen = document.body.getBoundingClientRect().top;
 
-//   android.position.z = 1;
+//   horseMan.position.z = 1;
 
 //   camera1.position.x = currentScreen * -0.002;
 //   camera1.rotation.y = currentScreen * -0.002;
@@ -97,7 +99,7 @@ function animate() {
  
   // For more detailed view of the scene.
   // controls.update();
-  //android.rotation.y += 0.007;
+  //horseMan.rotation.y += 0.007;
 
   render1.render( scene1, camera1 );
 
