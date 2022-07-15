@@ -56,7 +56,7 @@ let horseMan;
 function loadBlenderRobot() {
     const loader = new GLTFLoader();
 
-loader.load( 'model/HorseMan.gltf', function ( gltf ) {
+loader.load( 'model/HorseManV2.gltf', function ( gltf ) {
 
     horseMan = gltf.scene;
 
@@ -82,13 +82,12 @@ loader.load( 'model/HorseMan.gltf', function ( gltf ) {
 // function scrollEvent() {
 //   const currentScreen = document.body.getBoundingClientRect().top;
 
-//   horseMan.position.z = 1;
 
-//   camera1.position.x = currentScreen * -0.002;
-//   camera1.rotation.y = currentScreen * -0.002;
-//   camera1.position.z = currentScreen * -0.01;
+//   camera1.position.x = currentScreen * -3;
+//   camera1.rotation.y = currentScreen * -0.08;
+//   camera1.position.z = currentScreen * 2;
 // }
-// document.body.onscroll = scrollEvent
+// document.body.onscroll = scrollEvent;
 
 
 // Function to continually render scenes. 
@@ -99,7 +98,7 @@ function animate() {
  
   // For more detailed view of the scene.
   // controls.update();
-  //horseMan.rotation.y += 0.007;
+  horseMan.rotation.y += 0.007;
 
   render1.render( scene1, camera1 );
 
