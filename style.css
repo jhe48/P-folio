@@ -1,189 +1,206 @@
+/* May use the 60/30/10 rule 
+Yellow/ 000000/ ffffff */
+
+
+
+/* Welcome Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+
+
 * {
-  background-color: #E27676;
+  background-color: #ffff64;
 }
 
 
-canvas {
+/* canvas {
   position: fixed;
   top: 0;
   left: 0;
-}
-
+} */
+/* 
 body {
   margin: 0;
   width: 100vh;
   display: grid;
-}
-
-
-/* The Box surrounding the text  */
-
-.board {
-  top: 50px;
-  left: 130px;
-  min-width: 0px;
-  margin: 0 auto;
-  border: 6px solid #FFFFFF;
-  border-radius: 8px;
-  min-height: 250px;
-  text-align: center;
-  padding: 25px 45px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* Border Lights */
-  box-shadow: inset 0 0 22px 3px #F5AC27,
-                    0 0 28px 5px #F5AC27;
-                    
-  /* Animation */
-  animation: blink 0.15s infinite alternate;
-}
-
-.text{
-  width: 100%;
-  font-size: 6.5em;
-  font-family: 'Bangers', cursive;
-  color: #FFD9E2;
-  white-space: pre;
-  position: relative;
-
-  /* Text Lights */
-  text-shadow: 0 0 0 transparent,
-              0 0 10px #005BBB, 
-              0 0 20px rgba(255, 0, 60, 0.5),
-              0 0 40px #F5AC27,
-              0 0 300px #F5AC27,
-              0 0 200px #F5AC27,
-              0 0 300px #F5AC27,
-              0 0 500px #F5AC27;
-
-  /* Animation */
-  animation: flicker 5s infinite alternate;
-}
-
-/* Top Bar */
-.text::before {
-  content: "";
-  position: absolute;
-  height: 6px;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  background-color: #FFFCD7;
-  border-radius: 8px;
-
-  /* Top Bar Lights */
-  box-shadow: inset 0 0 18px rgba(251, 255, 0, 0.35),
-                    0 0 18px 5px rgba(251, 255, 0, 0.35);
-
-  /* Animation */
-  animation: blink 0.15s infinite alternate;
-}
-
-/* Bottom Bar */
-.text::after {
-  content: "";
-  position: absolute;
-  height: 6px;
-  Bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  background-color: #FFFCD7;
-  border-radius: 8px;
-
-  /* Bottom Bar Lights */
-  box-shadow: inset 0 0 18px rgba(251, 255, 0, 0.35),
-                    0 0 18px 5px rgba(251, 255, 0, 0.35);
-
-  /* Animation */
-  animation: blink 0.15s infinite alternate;
-}
-
-main {
-  top: 492px;
-  width: 100vh;
-  color: #AA381E;
-  z-index: 99;
-  position: absolute;
-  width: 80%;
-  margin: 0px auto;
-  padding: 120px 0px;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-h1, .intro{
- color: #F5AC27; 
-}
-
-h1, h3, .intro {
-  font-family: 'Press Start 2P', cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-p {
-  font-family: 'Press Start 2P', cursive;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.5;
-}
-
-header {
-  background: var(--dark-bg);
-  grid-column: 6 / span 6;
-  font-size: 2.5rem;
-  padding: 2rem;
-  line-height: 2;
-  margin-bottom: var(--spacing);
-}
-
-section {
-  grid-column: 2 / 13;
-  padding: 1rem;
-  background: var(--dark-bg);
-  font-size: 1.25rem;
-  line-height: 2;
-  margin-bottom: var(--spacing);
-}
-
-.socialme {
-  text-align: right;
-}
-
-a {
-  color: #AA381E;
-  font-family: 'Press Start 2P', cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-a:hover {
-  color: #F5AC27;
-}
-
-
-/* About Me Content */
-/* .abtInfo {
-  width: 600px;
-  position: absolute;
-  color: #FFFFFF;
-  top: 520px;
-  left: 160px;
-  text-align: left;
-  font-family: 'Press Start 2P', cursive;
 } */
 
+/* ====== WHOLE CONTAINER CONTAINING GRID ====== */
+
+main {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px 1fr));
+  grid-auto-rows: 270px;
+}
 
 
+
+/* ====== INTRODUCTION ====== */
+
+.intro-container {
+  /* font-family: 'proxima-nova', sans-serif; */
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 0;
+  font-size: 50px;
+  justify-content: left;
+  text-align: left;
+  margin: 0;
+  padding: 1rem;
+  border-left: 4px solid #000000;
+}
+
+.reg {
+
+  color: #000000;
+  font-size: 110%;
+  font-weight: 100;
+}
+
+.highl {
+  color: #000000;
+  font-size: 170%;
+  font-weight: bolder;
+}
+
+
+/* ====== INTRODUCTION END ====== */
+
+
+
+
+
+/* ====== PROJECTS ====== */
+
+.projects {
+  grid-row: 2 / 3;
+}
+
+.projects-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #000000;
+    padding: 1rem;
+    border-left: 4px solid #000000;
+}
+
+/* ====== PROJECTS END ====== */
+
+
+
+
+
+
+/* ====== ABOUT ME ====== */
+
+.aboutme {
+  grid-row: 3 / 4;
+}
+
+.about-me-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #000000;
+    padding: 1rem;
+    border-left: 4px solid #000000;
+}
+
+/* Base Text excluding beginning words. */
+.about-me-info {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 2;
+}
+
+/* ====== ABOUT ME END ====== */
+
+
+
+/* ====== HOBBIES ====== */
+
+.hobbies {
+  grid-row: 4 / 6;
+}
+
+.hobbies-subheading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: #000000;
+  padding: 1rem;
+  border-left: 4px solid #000000;
+}
+
+.hobbies-info {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ====== HOBBIES END ====== */
+
+
+
+
+/* ====== BUTTONS ====== */
+.button-container {
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+}
+
+.the-buttons {
+
+  color: #000000;
+
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  border: 4px #ffff18 solid;
+  background: linear-gradient(90deg, rgba(255,255,49,1) 0%, 
+  rgba(255,255,100,1) 35%, 
+  rgba(255,255,126,1) 100%);
+
+  box-shadow: inset 2px 2px 0px #FFFFB1,
+  inset -2px -2px 0px #000000;
+
+}
+
+.the-buttons:hover {
+  cursor: pointer;
+}
+
+.email:hover {
+  color: #DB4437;
+  box-shadow: inset 2px 2px 0px #FFFFB1,
+  inset -2px -2px 0px #DB4437;
+}
+
+.github:hover {
+  color: #80C91C;
+  box-shadow: inset 2px 2px 0px #FFFFB1,
+  inset -2px -2px 0px #80C91C;
+}
+
+.twitter:hover {
+  color: #1DA1F2;
+  box-shadow: inset 2px 2px 0px #FFFFB1,
+  inset -2px -2px 0px #1DA1F2;
+}
+
+.the-icons {
+  font-size: 2rem;
+}
+
+/* ====== BUTTONS END ====== */
+
+
+
+/* ====== WHOLE CONTAINER CONTAINING GRID END ====== */
 
 /* Actions */
-@keyframes blink {
+/* @keyframes blink {
   75% {
     opacity: 0.95;
   }
@@ -205,4 +222,4 @@ a:hover {
   46% {
     opacity: 1;
   }
-}
+} */
