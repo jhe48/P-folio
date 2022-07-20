@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Documentation
-- This program was created by Jacky He on 01/08/2022.
+This program was created by Jacky He on 01/08/2022.
 
 ## Description 
 - This project is a reflection of my current profile.
