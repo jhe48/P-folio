@@ -56,7 +56,7 @@ let horseMan;
 function loadBlenderRobot() {
     const loader = new GLTFLoader();
 
-loader.load( 'model/HorseManV2.gltf', function ( gltf ) {
+loader.load( 'model/HorseManStatue.gltf', function ( gltf ) {
 
     horseMan = gltf.scene;
 
@@ -64,7 +64,7 @@ loader.load( 'model/HorseManV2.gltf', function ( gltf ) {
 
     horseMan.scale.set(10, 10, 10);
     horseMan.position.x = 5;
-    horseMan.position.y = -2;
+    horseMan.position.y = -3;
   // horseMan.position.z = 15;
     horseMan.rotation.x = 0.3;
   // horseMan.rotation.y = -0.1;
