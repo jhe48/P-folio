@@ -5,7 +5,7 @@ This program was created by Jacky He on 01/08/2022.
 
 ## Description 
 - This project is a reflection of my current profile.
-- I plan to use **Three.js** with Blender for 3D objects that I plan to add in the future. 
+- I plan to use **Three.js** with Blender for 3D objects to put on my website.
 
 ## Tools Used
 - Blender
