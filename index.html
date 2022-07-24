@@ -1,130 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <!-- Name Font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<head>
+  <meta charset="UTF-8" />
 
-    <title> P-Folio </title>
-  </head>
-  <body>
+  <!-- Name Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    <!-- Canvas for monument 1 (Head) -->
+  <title> P-Folio </title>
+</head>
+
+<body>
+
+
+
+
+  <!-- Refactored Code -->
+  <div class="grid-container">
+
+    <!-- NAVIGATION BAR -->
+    <ul>
+      <li><a class="navb" href="#aboutme"> About Me</a></li>
+      <li><a class="navb" href="#hobbies"> Hobbies</a></li>
+      <li><a class="navb" href="#socialme">Contacts</a></li>
+    </ul>
+
+    <!-- Canvas THREEJS & Linking CSS -->
     <canvas id="model-1"></canvas>
-    <script type="module" src="/head.js">      
+    <script type="module" src="/head.js">
     </script>
 
-    <main>
-      <!-- <nav>
-        <ul>
-          <li>
-            <a href="#aboutme"> About Me</a>
-          </li>
-          <li>
-            <a href="#hobbies"> Hobbies</a>
-          </li>
-        </ul>
-      </nav> -->
+    <!-- INTRODUCTION -->
+    <header class="intro-container">
+      <p class="reg">Welcome to my</p>
+      <p class="highl"> Website.</p>
 
-      <header>
-        <!-- INTRODUCTION -->
-        <div class="intro-container">
-          <p class="reg">Welcome to my</p>
-          <p class="highl">  Website.</p>
-          <font style="
-          font-weight: 100;
-          font-size: 50%;
-          ">By: JACKY HE</font>
-        </div>
-        
-
-      </header>
-    
-
-      <!-- PROJECTS -->
-      <section class="projects">
-
-        <div class="projects-subheading">
-          <font style="font-weight: bolder;">Projects. <i class="fa-solid fa-caret-down"></i></font>
-        </div>
-
-      </section>
+    </header>
 
 
-      <!-- ABOUT ME -->
-      <section id="aboutme">
-        
-        <div class="about-me-subheading">
-          <font style="font-weight: 100;">About</font>
-          <font style="font-weight: bolder;">Me.</font>
-        </div>
-
-        <div class="about-me-info">
-          <p class="about-me-info">
-            <font style=" font-weight: bolder; font-size: 25px;
-            font-family: 'Montserrat', sans-serif;"
-            >Full Time Student</font> at the University at Buffalo
-            on the way to obtain my Bachelors in Computer Science after Spring 2024. 
-          </p>
-  
-          <p class="about-me-info">
-            <font style=" font-weight: bolder; font-size: 25px;
-            font-family: 'Montserrat', sans-serif;"
-            >Actively</font> seeking 
-            for job opportunities in order to expand my experience and knowledge in this field!
-          </p>
-        </div>
-
-
-      </section>
-      <section id="hobbies">
-
-        <div class="hobbies-subheading">
-          <font style="font-weight: 100;">Personal</font>
-          <font style="font-weight: bolder;">Pleasures.</font>
-        </div>
-        
-        <div class="hobbies-info">
-          <h3>🚗 Biking/Driving</h3>
-          <h3>👨‍💻 Coding Projects</h3>
-          <h3>🍚 Cooking</h3>
-          <h3>🧗 Hiking</h3>
-          <h3>🎬 Movies</h3>
-          <h3>🎹 Music</h3>
-          <h3>🗣️ Socializing</h3>
-          <h3>🎮 Video Games</h3>
-        </div> 
-
-      </section>
-
-      <section id="socialme">
-
-        <div class="button-container">
-          <button class="the-buttons email" onclick="location.href='mailto: jhebhs@gmail.com'" type="button">
-            <p class="the-icons">
-              <i class="fa-solid fa-envelope"></i>
-            </p>
-          </button>
-  
-          <button class="the-buttons github" onclick="location.href='https://github.com/jhe48'" type="button">
-            <p class="the-icons">
-              <i class="fab fa-github"></i>
-            </p>
-          </button>
-
-          <button class="the-buttons twitter" onclick="location.href='https://twitter.com/JackyHe75772128'" type="button">
-            <p class="the-icons">
-              <i class="fa-brands fa-twitter"></i>
-            </p>
-          </button>
-          
-        </div>
-
-
-      </section>
-
+    <!-- PROJECTS -->
+    <main class="projects">
+      <div class="projects-subheading">
+        <font style="font-weight: bolder;">Projects. <i class="fa-solid fa-caret-down"></i></font>
+      </div>
     </main>
 
-  </body>
+
+    <!-- ABOUT ME -->
+    <section id="aboutme">
+
+      <div class="about-me-subheading">
+        <font style="font-weight: 100;">About</font>
+        <font style="font-weight: bolder;">Me.</font>
+      </div>
+
+      <div class="about-me-info">
+        <p class="about-me-info">
+          <font style=" font-weight: bolder; font-size: 25px;
+                font-family: 'Montserrat', sans-serif;">Full Time Student</font> at the University at Buffalo
+          on the way to obtain my Bachelors in Computer Science after Spring 2024.
+        </p>
+
+        <p class="about-me-info">
+          <font style=" font-weight: bolder; font-size: 25px;
+                font-family: 'Montserrat', sans-serif;">Actively</font> seeking
+          for job opportunities in order to expand my experience and knowledge in this field!
+        </p>
+      </div>
+    </section>
+
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+
+      <div class="hobbies-subheading">
+        <font style="font-weight: 100;">Personal</font>
+        <font style="font-weight: bolder;">Pleasures.</font>
+      </div>
+
+      <div class="hobbies-info">
+        <h3>🚗 Biking/Driving</h3>
+        <h3>👨‍💻 Coding Projects</h3>
+        <h3>🍚 Cooking</h3>
+        <h3>🧗 Hiking</h3>
+        <h3>🎬 Movies</h3>
+        <h3>🎹 Music</h3>
+        <h3>🗣️ Socializing</h3>
+        <h3>🎮 Video Games</h3>
+      </div>
+    </section>
+
+
+    <!-- CONTACTS -->
+    <section id="socialme">
+
+      <div class="button-container">
+        <button class="the-buttons email" onclick="location.href='mailto: jhebhs@gmail.com'" type="button">
+          <p class="the-icons">
+            <i class="fa-solid fa-envelope"></i>
+          </p>
+        </button>
+
+        <button class="the-buttons github" onclick="location.href='https://github.com/jhe48'" type="button">
+          <p class="the-icons">
+            <i class="fab fa-github"></i>
+          </p>
+        </button>
+
+        <button class="the-buttons twitter" onclick="location.href='https://twitter.com/JackyHe75772128'" type="button">
+          <p class="the-icons">
+            <i class="fa-brands fa-twitter"></i>
+          </p>
+        </button>
+      </div>
+    </section>
+  </div>
+
+</body>
+
 </html>
