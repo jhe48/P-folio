@@ -41,6 +41,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #000000;
 }
 
+/* ====== REDIRECTION TAGS ====== */
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+
 
 /* ====== PAGE GRID LAYOUT ====== */
 .grid-container {
@@ -49,7 +56,7 @@ body::-webkit-scrollbar-thumb {
 
   /* grid-template-columns: repeat(auto-fit, minmax(240px 1fr)); */
   grid-template-columns: 1.8fr repeat(2, 1.2fr);
-  grid-template-rows: 110px 390px;
+  grid-template-rows: 150px 390px;
   grid-auto-rows: 330px;
 }
 
@@ -67,47 +74,37 @@ ul {
 li {
   display: inline;
   margin-left: 3rem;
-  margin-top: 1rem;
   padding: 1rem;
+  border-radius: 10%;
+  font-size: 1.15rem;
 }
 
 
-.name-nav {
+.unclickable {
   color: #ffff64;
   background-color: #000000;
-  box-shadow: 10px 10px #ffffff;
+  box-shadow: 6px 6px #d0d004;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.prjnav {
+.clickable {
   background-color: #000000;
   box-shadow: 10px 10px #faaed2;
 }
 
-.abtnav {
-  background-color: #000000;
-  box-shadow: 10px 10px #faaed2;
-}
-
-.hobnav {
-  background-color: #000000;
-  box-shadow: 10px 10px #faaed2;
-}
-
-.prjtxt {
+.page-pos {
   color: #ffff64;
   background-color: #000000;
+  text-decoration: none;
 }
 
-.abttxt {
-  color: #ffff64;
+.page-pos:hover {
+  color: #faaed2;
   background-color: #000000;
 }
 
-.hobtxt {
-  color: #ffff64;
-  background-color: #000000;
-}
+
 
 
 /* ====== SOCIALS ====== */
@@ -117,10 +114,49 @@ li {
 }
 
 .the-buttons {
-  margin-top: 2rem;
-  margin-left: 2rem;
+  padding: 1rem;
+  margin-top: 1.8rem;
+  margin-left: 1.5rem;
   margin-right: 2rem;
+
+  height: 4rem;
+  width: 4rem;
+  border-radius: 35%;
+  background-color: #000000;
 }
+
+i {
+  background-color: #000000;
+}
+
+.the-icons {
+  font-size: 2rem;
+  background-color: #000000;
+}
+
+.email {
+  box-shadow: 0.5rem 0.5rem #DB4437;
+  color: #DB4437;
+}
+
+
+.github {
+  box-shadow: 0.5rem 0.5rem #80C91C;
+  color: #80C91C;
+}
+
+.twitter {
+  box-shadow: 0.5rem 0.5rem #1DA1F2;
+  color: #1DA1F2;
+}
+
+.the-buttons:hover {
+  box-shadow: 0.5rem 0.5rem #faaed2;
+  color: #faaed2;
+  background-color: #000000;
+}
+
+
 
 /* ====== INTRODUCTION ====== */
 
