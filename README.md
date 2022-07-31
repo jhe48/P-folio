@@ -11,7 +11,6 @@ This program was created by Jacky He on 01/08/2022.
 - Blender
 - Three.js
 - ViteJS
-> This repository does not include these modules.
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
