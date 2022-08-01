@@ -56,7 +56,7 @@ a:hover {
 
   /* grid-template-columns: repeat(auto-fit, minmax(240px 1fr)); */
   grid-template-columns: 1.8fr repeat(2, 1.2fr);
-  grid-template-rows: 150px 390px 720px;
+  grid-template-rows: 150px 390px 720px 660px;
   grid-auto-rows: 330px;
 }
 
@@ -246,6 +246,7 @@ font-size: 50%;
 #aboutme {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  line-height: 2;
 }
 
 .about-me-subheading {
@@ -255,6 +256,7 @@ font-size: 50%;
   padding: 1rem;
   border-left: 4px solid #F0F0F0;
   text-shadow: 2px 2px 4px #000000;
+
 }
 
 .about-me-subheading:hover {
@@ -266,7 +268,6 @@ font-size: 50%;
 .about-me-info {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  line-height: 2;
   color: #F0F0F0;
   text-shadow: 2px 2px 4px #000000;
 }
