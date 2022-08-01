@@ -1,5 +1,5 @@
 /* May use the 60/30/10 rule 
-Yellow/ Black/ White with subtle others */
+Yellow/ Purple/ White with subtle others */
 /* People scan webpages in an F format
 So NavBar could be either. */
 
@@ -12,7 +12,7 @@ So NavBar could be either. */
 
 
 * {
-  background-color: #ffff64;
+  background-color: #46344E;
 }
 
 
@@ -26,19 +26,19 @@ So NavBar could be either. */
 /* ====== BODY TAG ====== */
 body {
   overflow-x: hidden;
-  /* Hide horizontal scrollbar */
+  /* Hide both scrollbars */
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.01rem;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #ffff64;
+  background-color: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: transparent;
 }
 
 /* ====== REDIRECTION TAGS ====== */
@@ -56,24 +56,29 @@ a:hover {
 
   /* grid-template-columns: repeat(auto-fit, minmax(240px 1fr)); */
   grid-template-columns: 1.8fr repeat(2, 1.2fr);
-  grid-template-rows: 150px 390px;
+  grid-template-rows: 150px 390px 720px;
   grid-auto-rows: 330px;
 }
 
-.nav-bar {
+.sticky {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
-  margin-top: 2rem;
+}
+
+
+.nav-bar {
+  margin-top: 3rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 ul {
   list-style: none;
+  margin-top: 0.2rem;
 }
 
 li {
   display: inline;
-  margin-left: 3rem;
+  margin-left: 1.5rem;
   padding: 1rem;
   border-radius: 10%;
   font-size: 1.15rem;
@@ -83,27 +88,27 @@ li {
 .unclickable {
   color: #ffff64;
   background-color: #000000;
-  box-shadow: 6px 6px #d0d004;
+  box-shadow: 10px 10px #FAED26;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .clickable {
   background-color: #000000;
-  box-shadow: 10px 10px #d0d004;
+  box-shadow: 10px 10px #F0F0F0;
 }
 
 .clickable:hover>.page-pos {
-  color: #faaed2;
+  color: #FAED26;
 }
 
 .clickable:hover {
   cursor: pointer;
-  box-shadow: 10px 10px #faaed2;
+  box-shadow: 10px 10px #FAED26;
 }
 
 .page-pos {
-  color: #ffff64;
+  color: #F0F0F0;
   background-color: #000000;
   text-decoration: none;
 }
@@ -112,14 +117,20 @@ li {
 
 
 /* ====== SOCIALS ====== */
-#socialme {
+/* #socialme {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
+} */
+
+
+.button-container {
+  display: flex;
+  margin-left: 65rem;
 }
 
 .the-buttons {
   padding: 1rem;
-  margin-top: 1.8rem;
+  margin-top: -3.911rem;
   margin-left: 1.5rem;
   margin-right: 2rem;
 
@@ -155,8 +166,8 @@ li {
 }
 
 .the-buttons:hover {
-  box-shadow: 0.5rem 0.5rem #faaed2;
-  color: #faaed2;
+  box-shadow: 0.5rem 0.5rem #FAED26;
+  color: #FAED26;
   background-color: #000000;
 }
 
@@ -174,7 +185,7 @@ li {
   justify-content: left;
   text-align: left;
   padding: 1rem;
-  border-left: 4px solid #000000;
+  border-left: 4px solid #FAED26;
 
 }
 
@@ -185,15 +196,17 @@ font-size: 50%;
 
 .reg {
 
-  color: #000000;
+  color: #F0F0F0;
   font-size: 60%;
   font-weight: 100;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .highl {
-  color: #000000;
+  color: #FAED26;
   font-size: 120%;
   font-weight: bolder;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -207,16 +220,26 @@ font-size: 50%;
 .projects-subheading {
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
-  color: #000000;
+  color: #F0F0F0;
   padding: 1rem;
-  border-left: 4px solid #000000;
+  border-left: 4px solid #F0F0F0;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .projects-subheading:hover {
   cursor: pointer;
+  color: #FAED26;
+  border-left: 4px solid #FAED26;
 }
 
-
+.projects-content-background {
+  background-color: #FF9D00;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  height: 33rem;
+  width: 85rem;
+}
 
 /* ====== ABOUT ME ====== */
 
@@ -228,9 +251,15 @@ font-size: 50%;
 .about-me-subheading {
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
-  color: #000000;
+  color: #F0F0F0;
   padding: 1rem;
-  border-left: 4px solid #000000;
+  border-left: 4px solid #F0F0F0;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.about-me-subheading:hover {
+  color: #FAED26;
+  border-left: 4px solid #FAED26;
 }
 
 /* Base Text excluding beginning words. */
@@ -238,6 +267,8 @@ font-size: 50%;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 2;
+  color: #F0F0F0;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -252,11 +283,19 @@ font-size: 50%;
 .hobbies-subheading {
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
-  color: #000000;
+  color: #F0F0F0;
   padding: 1rem;
-  border-left: 4px solid #000000;
+  border-left: 4px solid #F0F0F0;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.hobbies-subheading:hover {
+  color: #FAED26;
+  border-left: 4px solid #FAED26;
 }
 
 .hobbies-info {
   font-family: 'Montserrat', sans-serif;
+  color: #F0F0F0;
+  text-shadow: 2px 2px 4px #000000;
 }
