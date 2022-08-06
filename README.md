@@ -4,7 +4,7 @@
 This program was created by Jacky He on 01/08/2022.
 
 ## Description 
-- This project is a reflection of my current profile.
+- This is simply my website & reflects my current overall profile.
 - I plan to use **Three.js** library and import my own models from Blender for 3D elements to put on my website.
 
 ## Tools Used
