@@ -27,8 +27,9 @@ npm run dev
 
 ```
 # Snapshots
-![Screenshot 2022-08-01 at 3 30 03 PM](https://user-images.githubusercontent.com/78707612/182250150-b19ae31e-38fc-451d-a571-321614b1f0f1.png)
-![Screenshot 2022-08-01 at 3 30 17 PM](https://user-images.githubusercontent.com/78707612/182250153-436c9d39-b1fd-4f88-b7ce-ab1e808fdf09.png)
-![Screenshot 2022-08-01 at 3 30 30 PM](https://user-images.githubusercontent.com/78707612/182250155-ac3de1e9-4a72-477f-9281-e3629d243f70.png)
-![Screenshot 2022-08-01 at 3 30 40 PM](https://user-images.githubusercontent.com/78707612/182250158-083bf409-084e-42db-b79e-e07e9feedc73.png)
-
+![Screenshot 2022-08-10 at 1 27 32 PM](https://user-images.githubusercontent.com/78707612/184004264-ff2b2087-df02-46c4-b51b-f738fe198fe9.png)
+![Screenshot 2022-08-10 at 1 27 45 PM](https://user-images.githubusercontent.com/78707612/184004267-c3b73dcd-7498-4b33-a166-5783ee50148d.png)
+![Screenshot 2022-08-10 at 1 28 00 PM](https://user-images.githubusercontent.com/78707612/184004269-985af7cf-0f5e-4cd4-abc7-fe1d45325705.png)
+![Screenshot 2022-08-10 at 1 28 08 PM](https://user-images.githubusercontent.com/78707612/184004271-0e428430-97b3-4634-806d-5870d2aea496.png)
+![Screenshot 2022-08-10 at 1 28 16 PM](https://user-images.githubusercontent.com/78707612/184004274-b1a4aaca-9ba4-49a5-a0d7-0b08f91472b1.png)
+![Screenshot 2022-08-10 at 1 28 24 PM](https://user-images.githubusercontent.com/78707612/184004277-e5a48eb4-377a-4802-b937-f77d1a9e10f7.png)
