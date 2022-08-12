@@ -395,10 +395,21 @@ font-size: 50%;
 
 
 
+
+
+
+
+
+
+
 /* =============== VIEWPORT RESOLUTION/ DEVICE COMPATIBILITY =============== */
+/* Sources: */
+
 /* https: //uxpickle.com/what-is-the-smallest-screen-size-you-should-design-for/ */
 /* 320px will be the Smallest Available Viewport size. */
 
+/* https: //paulund.co.uk/boilerplate-css-media-queries */
+/* Using Mobile (LandScape & Portrait) & Ipads (Portrait & LandScape) */
 
 
 
@@ -530,10 +541,6 @@ font-size: 50%;
     box-shadow: 0.5rem 0.5rem #F0F0F0;
     color: #F0F0F0;
   }
-
-
-
-
 
 
   /* ====== INTRODUCTION ====== */
@@ -737,6 +744,885 @@ font-size: 50%;
     color: #F0F0F0;
     margin-top: 1rem;
     margin-left: 4rem;
+    padding: 1rem;
+    background-color: #47C35A;
+    font-size: 12px;
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Undefined Viewport Between Mobile & IPads */
+@media only screen and (min-width : 481px) and (max-width : 767px) {
+
+  /* ====== PAGE GRID LAYOUT ====== */
+  .grid-container {
+    display: grid;
+    gap: 0.8rem;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(240px 1fr)); */
+    grid-template-columns: 155px 155px;
+    grid-template-rows: 650px 300px 720px 650px;
+    grid-auto-rows: 330px;
+  }
+
+  .sticky {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin-top: -7rem;
+  }
+
+
+  .nav-bar {
+    margin-top: 10rem;
+    margin-left: 4rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 2rem;
+  }
+
+  li {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 0rem;
+
+    padding: 1.2rem;
+    border: 1px solid #f0f0f0;
+    border-radius: 40px;
+    font-size: 1.45rem;
+  }
+
+
+  .unclickable {
+    color: #ffff64;
+    background-color: #000000;
+    box-shadow: 10px 10px #FAED26;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .clickable {
+    margin-bottom: 2rem;
+    background-color: #000000;
+    box-shadow: 10px 10px #F0F0F0;
+  }
+
+  .clickable:hover>.page-pos {
+    color: #FAED26;
+  }
+
+  .clickable:hover {
+    cursor: pointer;
+    border: 1px solid #FAED26;
+    box-shadow: 10px 10px #FAED26;
+  }
+
+  .page-pos {
+    color: #F0F0F0;
+    background-color: #000000;
+    text-decoration: none;
+  }
+
+
+  /* ====== SOCIALS ====== */
+
+
+  .button-container {
+    display: flex;
+    margin-top: 7rem;
+    margin-left: 2.5rem;
+  }
+
+  .the-buttons {
+    padding: 1rem;
+
+    height: 4rem;
+    width: 4rem;
+    border-radius: 27px;
+    background-color: #000000;
+  }
+
+  .nav-buttons {
+    background-color: #000000;
+  }
+
+  .the-icons {
+    font-size: 2rem;
+    background-color: #000000;
+  }
+
+  .email {
+    border: 1px solid #FF272A;
+    box-shadow: 0.5rem 0.5rem #FD8463;
+    color: #FD8463;
+  }
+
+  .github {
+    border: 1px solid #58CD36;
+    box-shadow: 0.5rem 0.5rem #00F0A0;
+    color: #00F0A0;
+  }
+
+  .twitter {
+    border: 1px solid #0022EE;
+    box-shadow: 0.5rem 0.5rem #1DA1F2;
+    color: #1DA1F2;
+  }
+
+  .the-buttons:hover {
+    border: 1px solid #FFFFFF;
+    box-shadow: 0.5rem 0.5rem #F0F0F0;
+    color: #F0F0F0;
+  }
+
+
+  /* ====== INTRODUCTION ====== */
+
+  .intro-container {
+    /* font-family: 'proxima-nova', sans-serif; */
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 0;
+    font-size: 21px;
+    justify-content: left;
+    text-align: left;
+    padding: 1rem;
+    border-left: 4px solid #FAED26;
+  }
+
+
+  .reg {
+
+    color: #F0F0F0;
+    font-size: 61%;
+    font-weight: 100;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .highl {
+    color: #FAED26;
+    font-size: 200%;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+  /* ====== PROJECTS ====== */
+
+  #projects {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .projects-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .projects-subheading:hover {
+    cursor: pointer;
+    color: #FAED26;
+    border-left: 4px solid #FAED26;
+  }
+
+  .projects-content-background {
+    background-color: #FF9D00;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    height: 33rem;
+    width: 25rem;
+    border-radius: 35px;
+  }
+
+  /* ====== ABOUT ME ====== */
+
+  #aboutme {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    line-height: 2;
+  }
+
+  .about-me-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .about-me-subheading:hover {
+    color: #FAED26;
+    border-left: 4px solid #FAED26;
+  }
+
+  /* Base Text excluding beginning words. */
+  .about-me-info {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+
+  /* ====== HOBBIES ====== */
+
+  #hobbies {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+  }
+
+  .hobbies-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .hobbies-subheading:hover {
+    color: #FAED26;
+    border-left: 4px solid #FAED26;
+  }
+
+  .hobbies-info {
+    font-family: 'Montserrat', sans-serif;
+    color: #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+  /* ====== CONTACT FORM ====== */
+  .footer-bg {
+    background-color: #684B71;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    padding: 1rem;
+    height: 42rem;
+    width: 89rem;
+  }
+
+  .CF-subheading {
+    font-size: 45px;
+    line-height: 0.25;
+  }
+
+
+  .normal {
+    font-weight: 100;
+    background-color: #684B71;
+  }
+
+  .bold {
+    font-weight: bolder;
+    background-color: #684B71;
+  }
+
+
+  .form-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    background-color: #684B71;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #contact-form {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+    width: 1rem;
+  }
+
+
+  .user-input {
+    display: block;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #777;
+    border-radius: 1rem;
+    outline: none;
+  }
+
+  .msg-box {
+    width: 15rem;
+    height: 10rem;
+    padding-top: 1rem;
+    resize: none;
+  }
+
+  .submit-input {
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    color: #F0F0F0;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    padding: 1rem;
+    background-color: #47C35A;
+    font-size: 12px;
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPads */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+  /* ====== PAGE GRID LAYOUT ====== */
+  .grid-container {
+    display: grid;
+    gap: 0.8rem;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(240px 1fr)); */
+    grid-template-columns: 370px 370px;
+    grid-template-rows: 400px 300px 720px 650px;
+    grid-auto-rows: 330px;
+  }
+
+  .sticky {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin-top: -5rem;
+  }
+
+
+  .nav-bar {
+    margin-top: 10rem;
+    margin-left: -2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0.5rem;
+  }
+
+  li {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    padding: 1.5rem;
+    border: 1px solid #f0f0f0;
+    border-radius: 40px;
+    font-size: 1.45rem;
+  }
+
+
+  .unclickable {
+    color: #ffff64;
+    background-color: #000000;
+    box-shadow: 10px 10px #FAED26;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .clickable {
+    margin-bottom: 2rem;
+    background-color: #000000;
+    box-shadow: 10px 10px #F0F0F0;
+  }
+
+  .clickable:hover>.page-pos {
+    color: #FAED26;
+  }
+
+  .clickable:hover {
+    cursor: pointer;
+    border: 1px solid #FAED26;
+    box-shadow: 10px 10px #FAED26;
+  }
+
+  .page-pos {
+    color: #F0F0F0;
+    background-color: #000000;
+    text-decoration: none;
+  }
+
+
+
+
+  /* ====== SOCIALS ====== */
+
+
+  .button-container {
+    display: flex;
+    margin-top: 7rem;
+    margin-left: 12rem;
+  }
+
+  .the-buttons {
+    padding: 1rem;
+
+    height: 4rem;
+    width: 4rem;
+    border-radius: 27px;
+    background-color: #000000;
+  }
+
+  .nav-buttons {
+    background-color: #000000;
+  }
+
+  .the-icons {
+    font-size: 2rem;
+    background-color: #000000;
+  }
+
+  .email {
+    border: 1px solid #FF272A;
+    box-shadow: 0.5rem 0.5rem #FD8463;
+    color: #FD8463;
+  }
+
+  .github {
+    border: 1px solid #58CD36;
+    box-shadow: 0.5rem 0.5rem #00F0A0;
+    color: #00F0A0;
+  }
+
+  .twitter {
+    border: 1px solid #0022EE;
+    box-shadow: 0.5rem 0.5rem #1DA1F2;
+    color: #1DA1F2;
+  }
+
+  .the-buttons:hover {
+    border: 1px solid #FFFFFF;
+    box-shadow: 0.5rem 0.5rem #F0F0F0;
+    color: #F0F0F0;
+  }
+
+
+
+  /* ====== INTRODUCTION ====== */
+
+  .intro-container {
+    /* font-family: 'proxima-nova', sans-serif; */
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 0;
+    font-size: 50px;
+    justify-content: left;
+    text-align: left;
+    padding: 1rem;
+    border-left: 4px solid #FAED26;
+
+  }
+
+  /* <font style="
+     font-weight: 100;
+    font-size: 50%;
+    ">By: JACKY HE</font> */
+
+  .reg {
+
+    color: #F0F0F0;
+    font-size: 60%;
+    font-weight: 100;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .highl {
+    color: #FAED26;
+    font-size: 120%;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+  /* ====== PROJECTS ====== */
+
+  #projects {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .projects-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .projects-subheading:hover {
+    cursor: pointer;
+    color: #FAED26;
+    border-left: 4px solid #FAED26;
+  }
+
+  .projects-content-background {
+    background-color: #FF9D00;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    height: 33rem;
+    width: 43.2rem;
+    border-radius: 35px;
+  }
+
+  /* ====== ABOUT ME ====== */
+
+  #aboutme {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    line-height: 2;
+  }
+
+  .about-me-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .about-me-subheading:hover {
+    color: #FAED26;
+    border-left: 4px solid #FAED26;
+  }
+
+  /* Base Text excluding beginning words. */
+  .about-me-info {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+
+  /* ====== HOBBIES ====== */
+
+  #hobbies {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+  }
+
+  .hobbies-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .hobbies-subheading:hover {
+    color: #FAED26;
+    border-left: 4px solid #FAED26;
+  }
+
+  .hobbies-info {
+    font-family: 'Montserrat', sans-serif;
+    color: #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+  /* ====== CONTACT FORM ====== */
+  .footer-bg {
+    background-color: #684B71;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    padding: 1rem;
+    height: 42rem;
+    width: 89rem;
+  }
+
+  .CF-subheading {
+    font-size: 45px;
+    line-height: 0.25;
+  }
+
+
+  .normal {
+    font-weight: 100;
+    background-color: #684B71;
+  }
+
+  .bold {
+    font-weight: bolder;
+    background-color: #684B71;
+  }
+
+
+  .form-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    background-color: #684B71;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  #contact-form {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+    width: 1rem;
+  }
+
+
+  .user-input {
+    display: block;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #777;
+    border-radius: 1rem;
+    outline: none;
+  }
+
+  .msg-box {
+    width: 43.2rem;
+    height: 10rem;
+    padding-top: 1rem;
+    resize: none;
+  }
+
+  .submit-input {
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    color: #F0F0F0;
+    margin-top: 1rem;
+    margin-left: 18rem;
+    padding: 1rem;
+    background-color: #47C35A;
+    font-size: 12px;
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Undefined Viewport Between iPads & Default size */
+@media only screen and (min-width : 1025px) and (max-width : 1189px) {
+
+  .button-container {
+    display: flex;
+    margin-left: 41rem;
+  }
+
+  /* ====== PROJECTS ====== */
+
+
+  .projects-content-background {
+    background-color: #FF9D00;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    height: 33rem;
+    width: 59rem;
+    border-radius: 35px;
+  }
+
+  /* ====== ABOUT ME ====== */
+
+  #aboutme {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    line-height: 2;
+  }
+
+  .about-me-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .about-me-subheading:hover {
+    color: #FAED26;
+    border-left: 4px solid #FAED26;
+  }
+
+  /* Base Text excluding beginning words. */
+  .about-me-info {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+
+  /* ====== HOBBIES ====== */
+
+  #hobbies {
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+  }
+
+  .hobbies-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .hobbies-subheading:hover {
+    color: #FAED26;
+    border-left: 4px solid #FAED26;
+  }
+
+  .hobbies-info {
+    font-family: 'Montserrat', sans-serif;
+    color: #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+
+  /* ====== CONTACT FORM ====== */
+  .footer-bg {
+    background-color: #684B71;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    padding: 1rem;
+    height: 42rem;
+    width: 89rem;
+  }
+
+  .form-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #F0F0F0;
+    padding: 1rem;
+    background-color: #684B71;
+    border-left: 4px solid #F0F0F0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .CF-subheading {
+    font-size: 55px;
+    line-height: 0.25;
+  }
+
+
+  .normal {
+    font-weight: 100;
+    background-color: #684B71;
+  }
+
+  .bold {
+    font-weight: bolder;
+    background-color: #684B71;
+  }
+
+  #contact-form {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+    width: 1rem;
+  }
+
+
+  .user-input {
+    display: block;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #777;
+    border-radius: 1rem;
+    outline: none;
+  }
+
+  .msg-box {
+    width: 20rem;
+    height: 10rem;
+    padding-top: 1rem;
+    resize: none;
+  }
+
+  .submit-input {
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    color: #F0F0F0;
+    margin-top: 1rem;
+    margin-left: 6rem;
     padding: 1rem;
     background-color: #47C35A;
     font-size: 12px;
