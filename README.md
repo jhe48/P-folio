@@ -4,7 +4,7 @@
 This program was created by Jacky He on 01/08/2022.
 
 ## Description 
-- This is simply my website & reflects my current overall profile.
+- This is simply my website & reflects my current profile.
 - I plan to use **Three.js** library and import my own models from Blender for 3D elements to put on my website.
 
 ## Tools Used
@@ -27,7 +27,6 @@ npm run dev
 
 ```
 # Snapshots
-![Screenshot 2022-08-10 at 1 27 32 PM](https://user-images.githubusercontent.com/78707612/184004264-ff2b2087-df02-46c4-b51b-f738fe198fe9.png)
 ![Screenshot 2022-08-10 at 1 27 45 PM](https://user-images.githubusercontent.com/78707612/184004267-c3b73dcd-7498-4b33-a166-5783ee50148d.png)
 ![Screenshot 2022-08-10 at 1 28 00 PM](https://user-images.githubusercontent.com/78707612/184004269-985af7cf-0f5e-4cd4-abc7-fe1d45325705.png)
 ![Screenshot 2022-08-10 at 1 28 08 PM](https://user-images.githubusercontent.com/78707612/184004271-0e428430-97b3-4634-806d-5870d2aea496.png)
